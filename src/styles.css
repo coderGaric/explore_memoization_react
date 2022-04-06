@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-section {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-section .button {
+  width: 120px;
+  font-size: 30px;
+}
+
+.article-section div:first-child {
+  text-align: center;
+}
+
+.article-section h1:nth-child(1) {
+  font-size: 50px;
+  text-align: center;
+}
+
+.article-section .add-minus {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.comments-section {
+  width: 500px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.comment-box {
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-box:nth-child(even) {
+  background: lightgrey;
+}
+
+.comment-box div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.comment-box div .avatar {
+  width: 50px;
+  height: 50px;
+  background: gray;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-box div .email {
+  font-size: 1em;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.comment-box .title {
+  font-size: 1.25em;
+}
+
+.comment-box .body {
+  font-size: 0.9em;
+}
